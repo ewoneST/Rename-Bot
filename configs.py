@@ -18,7 +18,7 @@ class Config(object):
     DOWNLOAD_DIR = os.environ.get("DOWNLOAD_DIR", "./downloads")
     LOGGER = logging
     OWNER_ID = int(os.environ.get("OWNER_ID", 6838589973))
-    PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "0").split()))
+    PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "6838589973").split()))
     PRO_USERS.append(OWNER_ID)
     MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb+srv://stthamizhan:stthamizhan@cluster0.pece5vb.mongodb.net/?retryWrites=true&w=majority")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001726568241"))
